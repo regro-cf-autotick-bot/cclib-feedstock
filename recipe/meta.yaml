@@ -1,5 +1,5 @@
 {% set name = "cclib" %}
-{% set version = "1.6" %}
+{% set version = "1.6.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 636dfbc192c0a95079aaba3fb0c4872222c2a8d500f28d681bc0522fe81dc49a
+  sha256: 0428aa8c29b7460c767a8b3b14c089ee83bbd6269a0af2a2164eafa962f1c2d4
 
 build:
   number: 1
@@ -48,7 +48,7 @@ about:
   license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'Parsers and algorithms for computational chemistry logfiles'
+  summary: Parsers and algorithms for computational chemistry logfiles
   description: |
     cclib is a Python library that provides parsers for output files of
     computational chemistry packages. It also provides a platform for
@@ -62,3 +62,4 @@ extra:
     - jaimergp
     - richardjgowers
     - berquist
+    - langner
